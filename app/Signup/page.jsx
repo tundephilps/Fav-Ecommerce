@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import Quick from "../images/Quick.png";
+import Quick from "../../images/Quick.png";
 import Link from "next/link";
 import Image from "next/image";
 const Signup = () => {

@@ -4,7 +4,7 @@ import { CiHeart } from "react-icons/ci";
 import { IoMdFlame } from "react-icons/io";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 
-import Shop from "../images/shop.png";
+import Shop from "../../images/shop.png";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Image from "next/image";
 import { FaCartPlus, FaHeart } from "react-icons/fa";

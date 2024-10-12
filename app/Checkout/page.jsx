@@ -1,30 +1,30 @@
 "use client";
 import React from "react";
-import Boxers from "../images/Boxers.png";
-import Shades from "../images/Shades.png";
-import Card from "../images/CreditCard.png";
-import Coin from "../images/coinbase.png";
-import Payoneer from "../images/Payoneer.png";
+import Boxers from "../../images/Boxers.png";
+import Shades from "../../images/Shades.png";
+import Card from "../../images/CreditCard.png";
+import Coin from "../../images/coinbase.png";
+import Payoneer from "../../images/Payoneer.png";
 import { BsCreditCardFill } from "react-icons/bs";
 
-import Pay1 from "../images/pay1.png";
+import Pay1 from "../../images/pay1.png";
 
-import Pay2 from "../images/pay2.png";
-import Pay3 from "../images/pay3.png";
-import Pay4 from "../images/pay4.png";
-import Pay5 from "../images/pay5.png";
-import Pay6 from "../images/pay6.png";
-import Pay7 from "../images/pay7.png";
-import Pay8 from "../images/pay8.png";
-import Pay9 from "../images/pay9.png";
-import Pay10 from "../images/pay10.png";
+import Pay2 from "../../images/pay2.png";
+import Pay3 from "../../images/pay3.png";
+import Pay4 from "../../images/pay4.png";
+import Pay5 from "../../images/pay5.png";
+import Pay6 from "../../images/pay6.png";
+import Pay7 from "../../images/pay7.png";
+import Pay8 from "../../images/pay8.png";
+import Pay9 from "../../images/pay9.png";
+import Pay10 from "../../images/pay10.png";
 
-import Paypal from "../images/Paypal.png";
+import Paypal from "../../images/Paypal.png";
 import { BiEdit } from "react-icons/bi";
 import { CiEdit } from "react-icons/ci";
 import Image from "next/image";
 
-const CheckoutPage = () => {
+const Checkout = () => {
   return (
     <div className="grid lg:grid-cols-6 grid-cols-1 lg:p-12 gap-12 bg-[#fefefefe]">
       <div className="lg:col-span-4 col-span-6 ">
@@ -263,4 +263,4 @@ const CheckoutPage = () => {
   );
 };
 
-export default CheckoutPage;
+export default Checkout;

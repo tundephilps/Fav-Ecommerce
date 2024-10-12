@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Logo from "../images/Logo2.jpeg";
+import Logo from "../../images/Logo2.jpeg";
 import Link from "next/link";
 const ResetPassword = () => {
   return (
@@ -13,7 +13,7 @@ const ResetPassword = () => {
                 Reset your password
               </h3>
               <p>
-                Enter the email you used to log in to FavorSelect, We'll send
+                Enter the email you used to log in to FavorSelect, We will send
                 you a password reset link
               </p>
             </div>

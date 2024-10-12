@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Logo from "../../images/Logo.png";
 import { FaAngleDown, FaFacebook } from "react-icons/fa";
 import { FaRegBell } from "react-icons/fa6";
@@ -18,8 +18,9 @@ import Image from "next/image";
 
 const Navbar = () => {
   const [isPopoutVisible, setIsPopoutVisible] = useState(false);
-
   const [isProfileVisible, setIsProfileVisible] = useState(false);
+  const notificationRef = useRef(null);
+  const profileRef = useRef(null);
 
   const togglePopout = () => {
     setIsPopoutVisible(!isPopoutVisible);
@@ -28,6 +29,25 @@ const Navbar = () => {
   const toggleProfile = () => {
     setIsProfileVisible(!isProfileVisible);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        notificationRef.current &&
+        !notificationRef.current.contains(event.target) &&
+        profileRef.current &&
+        !profileRef.current.contains(event.target)
+      ) {
+        setIsPopoutVisible(false);
+        setIsProfileVisible(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const socialLinks = [
     {
@@ -94,6 +114,7 @@ const Navbar = () => {
 
         <div className="flex flex-row items-center lg:gap-8 gap-4 text-gray-700">
           <div
+            ref={notificationRef}
             className="flex flex-col items-center justify-center gap-2 relative"
             onClick={togglePopout}
           >
@@ -105,6 +126,7 @@ const Navbar = () => {
           </div>
           {isPopoutVisible && <Notification />}
           <div
+            ref={profileRef}
             className=" flex flex-col items-center justify-center gap-2"
             onClick={toggleProfile}
           >

@@ -1,5 +1,5 @@
 import React from "react";
-import EmptyOrder from "../images/EmptyOrder.png";
+import EmptyOrder from "../../images/EmptyOrder.png";
 import Image from "next/image";
 
 const MyOrders = () => {

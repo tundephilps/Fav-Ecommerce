@@ -1,6 +1,7 @@
+import React from "react";
 import { useState } from "react";
 
-export default () => {
+const Pagination = () => {
   const [pages, setPages] = useState(["1", "2", "3", , "...", "8", "9", "10"]);
   const [currentPage, setCurrentPage] = useState("1");
 
@@ -89,3 +90,5 @@ export default () => {
     </div>
   );
 };
+
+export default Pagination;

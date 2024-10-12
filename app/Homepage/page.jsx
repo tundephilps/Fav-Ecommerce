@@ -4,7 +4,7 @@ import BestDeals from "../../components/homepage/BestDeals";
 import Promotions from "../../components/homepage/Promotions";
 import Popular from "../../components/homepage/Popular";
 import Collection from "../../components/homepage/Collection";
-import Ads from "../images/Ads.png";
+import Ads from "../../images/Ads.png";
 import Explore from "../../components/homepage/Explore";
 import Image from "next/image";
 

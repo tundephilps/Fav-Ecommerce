@@ -1,22 +1,21 @@
 "use client";
 import React, { useState } from "react";
-import EmptyCart from "../components/shoppingcart/EmptyCart";
-import Pay1 from "../images/pay1.png";
+import EmptyCart from "../../components/shoppingcart/EmptyCart";
+import Pay1 from "../../images/pay1.png";
 
-import Pay2 from "../images/pay2.png";
-import Pay3 from "../images/pay3.png";
-import Pay4 from "../images/pay4.png";
-import Pay5 from "../images/pay5.png";
-import Pay6 from "../images/pay6.png";
-import Pay7 from "../images/pay7.png";
-import Pay8 from "../images/pay8.png";
-import Pay9 from "../images/pay9.png";
-import Pay10 from "../images/pay10.png";
-import Boxer from "../images/Boxers.png";
+import Pay2 from "../../images/pay2.png";
+import Pay3 from "../../images/pay3.png";
+import Pay4 from "../../images/pay4.png";
+import Pay5 from "../../images/pay5.png";
+import Pay6 from "../../images/pay6.png";
+import Pay7 from "../../images/pay7.png";
+import Pay8 from "../../images/pay8.png";
+import Pay9 from "../../images/pay9.png";
+import Pay10 from "../../images/pay10.png";
+import Boxer from "../../images/Boxers.png";
 
-import Bag from "../images/Bag.png";
+import Bag from "../../images/Bag.png";
 
-import Shades from "../images/Shades.png";
 import { FaMinus, FaPlus, FaTrash } from "react-icons/fa";
 import { HiTrash } from "react-icons/hi";
 import Link from "next/link";

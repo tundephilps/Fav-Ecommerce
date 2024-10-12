@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import ProductSlider from "../components/productdetails/ProductSlider";
+import ProductSlider from "../../components/productdetails/ProductSlider";
 import { CiHeart } from "react-icons/ci";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { IoIosStar, IoMdFlame } from "react-icons/io";
@@ -13,18 +13,18 @@ import {
 } from "react-icons/fa";
 import { PiHandshakeBold } from "react-icons/pi";
 import { BiSolidPackage, BiSolidShieldX } from "react-icons/bi";
-import QR from "../images/QR.png";
+import QR from "../../images/QR.png";
 
-import Download from "../images/Download.png";
+import Download from "../../images/Download.png";
 
-import Store from "../images/Store.png";
+import Store from "../../images/Store.png";
 
-import Chat from "../images/Chat.png";
+import Chat from "../../images/Chat.png";
 
-import special from "../images/special.jpg";
+import special from "../../images/special.jpg";
 import { IoFilter } from "react-icons/io5";
-import Pagination from "../components/productdetails/Pagination";
-import Toppicks from "../components/productdetails/Toppicks";
+import Pagination from "../../components/productdetails/Pagination";
+import Toppicks from "../../components/productdetails/Toppicks";
 import Image from "next/image";
 
 const ProductDetails = () => {
@@ -47,7 +47,7 @@ const ProductDetails = () => {
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
             <ProductSlider />
             <div className="">
-              <h1 className="font-bold text-3xl">Leather Men's Slipper</h1>
+              <h1 className="font-bold text-3xl">Leather Mens Slipper</h1>
               <h1 className="flex items-center gap-3 text-gray-500 pt-3">
                 <IoIosStar className="text-[#f52828]" />
                 <span className="">4.5 </span> Recommeded by 96% 137 purchase
