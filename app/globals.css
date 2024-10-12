@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 25px; /* Set the width of the buttons */
+  height: 25px; /* Set the height of the buttons */
+  background-color: rgba(239, 229, 229, 0.5); /* Add a background color */
+  border-radius: 50%; /* Make the buttons round */
+  padding: 32px;
+  margin: 23px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 12px; /* Adjust the icon size */
+  color: white; /* Set the color of the arrow */
+}
+
+.swiper-button-prev {
+  left: -10px; /* Adjust the position */
+  top: 80px;
+}
